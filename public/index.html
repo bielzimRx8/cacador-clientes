@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caçador de Clientes</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0b0b0f;
+      color: white;
+      min-height: 100vh;
+      padding: 30px 20px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #aaa;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+
+    input {
+      flex: 1;
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid #333;
+      background: #17171d;
+      color: white;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 15px 20px;
+      border: 0;
+      border-radius: 10px;
+      background: #6d28d9;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .result {
+      background: #15151b;
+      border: 1px solid #292932;
+      padding: 18px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+
+    .result h3 {
+      margin-bottom: 8px;
+    }
+
+    .result p {
+      color: #aaa;
+      margin: 5px 0;
+    }
+
+    .result a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #a78bfa;
+    }
+
+    @media (max-width: 550px) {
+      form {
+        flex-direction: column;
+      }
+
+      button {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Caçador de Clientes</h1>
+
+    <p class="subtitle">
+      Encontre empresas e potenciais clientes para oferecer seus serviços.
+    </p>
+
+    <form id="searchForm">
+
+      <input
+        id="searchInput"
+        type="text"
+        placeholder="Ex: barbearias em Governador Valadares"
+      >
+
+      <button type="submit">
+        Buscar
+      </button>
+
+    </form>
+
+    <div id="results"></div>
+
+  </div>
+
+  <script src="/app.js"></script>
+
+</body>
+</html>
