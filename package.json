@@ -1,0 +1,12 @@
+{
+  "name": "cacador-clientes",
+  "version": "1.0.0",
+  "description": "Caçador de Clientes",
+  "main": "servidor.js",
+  "scripts": {
+    "start": "node servidor.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
